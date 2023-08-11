@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Atamasthana</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new_Stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>     
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  </head>
+
+  <body>
+    <div class="section1">
+      <div class="menuitem1"><a href="#about" style=color:#E0E0E0;text-decoration:none;> ABOUT </a></div>
+      <div class="menuitem2"><a href="#Places" style=color:#E0E0E0;text-decoration:none;> PLACES </a></div>
+      <div class="menuitem3"><a href="#footer" style=color:#E0E0E0;text-decoration:none;> CONTACT </a></div>
+      <div class="menuitem4"><a href="signup.html" style=color:#E0E0E0;text-decoration:none;> SignIn </a></div>
+      
+      <h1>අටමස්ථානය</h1>
+      <h5>Atamasthana</h5>
+    </div>
+
+    <button class="button1"><a href="#"><i class="fas fa-home"  style="color: aliceblue;"></i></a></button>
+    <button class="button2" onclick="openForm()"><i class='fas fa-phone' style='font-size:36px'></i></button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container" name="myForm">
+        <h7>CHAT</h7><br><br>
+        
+        <label for="name">Name :</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your Name here..." required><br>
+        
+        <label for="Contact">Contact no: </label><br>
+        <input type="text" id="Contact" name="Contact" placeholder="+94xxxxxxxxx" pattern="+94 [0-9]{9}" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="xxx@xmail.com" required><br>
+        <br>
+        <textarea placeholder="Type your message here..." name="msg"></textarea><br>
+        
+        <button type="submit" class="btn" onclick="phonenumber(myForm1.Contact)">SEND</button>
+        
+        <button type="button" class="btn cancel" onclick="closeForm()">CANCEL</button>
+      </form>
+    </div>
+
+    <div class="section2">
+      <h2 id="about">Atamasthana</h2>
+      <h6> (අටමස්ථානය)</h6> 
+      <br>
+      
+      <div class="section6">
+        <p class="p1"><span class="tab"></span>Atamasthana or Eight sacred places are a series of locations in Sri Lanka where the Buddha had visited during his three visits to the country. The sacred places are known as Jaya Sri Maha Bodhiya, Ruwanwelisaya, Thuparamaya, Lovamahapaya, Abhayagiri Dagaba, Jetavanarama, Mirisaveti Stupa and Lankarama.</p>
+      </div>
+
+      <div class="section5">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 8</div>
+            <img src="images/Abhayagiriya1.jpg" alt="Abhayagiriya" style="width:100%">
+            <div class="text">Abhayagiriya</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+            <img src="images/Ruwanwelisaya3.jpg" alt="Ruwanwelisaya" style="width:100%">
+            <div class="text">Ruwanwelisaya</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+            <img src="images/Jetavanaramaya1.jpg" alt="Jetavanaramaya" style="width:100%">
+            <div class="text">Jetavanaramaya</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+            <img src="images/lankarama3.jpg" alt="lankaramaya" style="width:100%">
+            <div class="text">lankaramaya</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+            <img src="images/Lovamahapaya1.jpg" alt="Lovamahapaya" style="width:100%">
+            <div class="text">Lovamahapaya</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+            <img src="images/Mirisawetiya2.jpg" alt="Mirisawetiya" style="width:100%">
+            <div class="text">Mirisawetiya</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <img src="images/Thuparamaya3.jpg" alt="Thuparamaya" style="width:100%">
+            <div class="text">Thuparamaya</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <img src="images/bodhi2.jpg" alt="Sri Maha Bodhiya" style="width:100%">
+            <div class="text">Sri Maha Bodhiya</div>
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section3">
+      <h4 id="Places">The Eight Sacred Sites in Anuradhapura</h4>
+      
+      <div class="row" id="Places">
+        <div class="column dropdown">
+          <a href="#Thuparamaya"><img src="images/Thuparamaya3.jpg" style="width:100%" alt="Thuparamaya"></a>
+          <div class="dropdown-content">
+            <img src="images/Thuparamaya3.jpg" alt="Thuparamaya" width="300" height="200">
+            <div class="desc">Thuparamaya</div>
+          </div>
+        </div>
+
+        <div class="column dropdown">
+          <a href="#Abhayagiriya"><img src="images/Abhayagiriya1.jpg" alt="Abhayagiriya" style="width:100%" ></a>
+          <div class="dropdown-content">
+            <img src="images/Abhayagiriya1.jpg" alt="Abhayagiriya" width="300" height="200">
+            <div class="desc">Abhayagiriya</div>
+          </div>
+        </div>
+
+        <div class="column dropdown">
+          <a href="#Jetavanaramaya"><img src="images/Jetavanaramaya1.jpg" alt="Jetavanaramaya" style="width:100%"></a>
+          <div class="dropdown-content">
+            <img src="images/Jetavanaramaya1.jpg" alt="Jetavanaramaya" width="300" height="200">
+            <div class="desc">Jetavanaramaya</div>
+          </div>
+        </div>
+
+        <div class="column dropdown">
+          <a href="#Lankaramaya"><img src="images/lankarama3.jpg" alt="Lankaramaya" style="width:100%"></a>
+          <div class="dropdown-content">
+            <img src="images/lankarama3.jpg" alt="Lankaramaya" width="300" height="200">
+            <div class="desc">Lankaramaya</div>
+          </div>
+        </div>
+
+        <div class="column dropdown">
+          <a href="#Lovamahapaya"><img src="images/Lovamahapaya1.jpg" alt="Lovamahapaya" style="width:100%"></a>
+          <div class="dropdown-content">
+            <img src="images/Lovamahapaya1.jpg" alt="Lovamahapaya" width="300" height="200">
+            <div class="desc">Lovamahapaya</div>
+          </div>
+        </div>
+
+        <div class="column dropdown">
+          <a href="#Mirisavetiya"><img src="images/Mirisawetiya2.jpg" alt="Mirisawetiya" style="width:100%"></a>
+          <div class="dropdown-content">
+            <img src="images/Mirisawetiya2.jpg" alt="Mirisawetiya" width="300" height="200">
+            <div class="desc">Mirisawetiya</div>
+          </div>
+        </div>
+
+        <div class="column dropdown">
+          <a href="#Ruwanwelisaya"><img src="images/Ruwanwelisaya3.jpg" alt="Ruwanwelisaya" style="width:100%"></a>
+          <div class="dropdown-content">
+            <img src="images/Ruwanwelisaya3.jpg" alt="Ruwanwelisaya" width="300" height="200">
+            <div class="desc">Ruwanwelisaya</div>
+          </div>
+        </div>
+
+        <div class="column dropdown">
+          <a href="#Bodhi"><img src="images/bodhi2.jpg" alt="Sri Maha Bodhiya" style="width:100%"></a>
+          <div class="dropdown-content">
+            <img src="images/bodhi2.jpg" alt="Sri Maha Bodhiya" width="300" height="200">
+            <div class="desc">Sri Maha Bodhiya</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="desc-box">
+        <h3 id="Thuparamaya">Thuparamaya</h3>
+        <br></br>
+        <img class="image" src="images/Thuparamaya3.jpg">
+        <p><span class="tab"></span>Thuparamaya is a dageba in Anuradhapura, Sri Lanka. It is a holy location revered by Buddhists. Thera Mahinda was a representative of King Ashoka who brought chetiya worship and Theravada Buddhism to Sri Lanka. At his suggestion, King Devanampiyatissa constructed Thuparamaya, where the Buddha's collarbone is preserved. It is thought to be the first dagaba constructed in Sri Lanka when Buddhism was introduced. This is regarded as the first monument, the building of which was documented in Sri Lanka. The words "stupa" and "aramaya," which refer to a monks' housing complex, are the roots of the name Thuparamaya.</p>
+      </div>  
+      
+      <div class="desc-box">
+        <h3 id="Abhayagiriya">Abhayagiri Dagaba</h3>
+        <br></br>
+        <img class="image" src="images/Abhayagiriya1.jpg">
+        <p><span class="tab"></span>The Abhayagiri Dagaba is situated in Anuradhapura, Sri Lanka. During the reign of King Wattagamini Abhaya, also referred to as King Valagamba, it was constructed. It is one of the largest archaeological sites in the world and a holy Buddhist pilgrimage city. In the past, it was a significant monastic center as well as a royal capital, with beautiful monasteries rising to many stories and having roofs made of burned clay tiles with brilliantly colored glazes or gilded metal. The greatest of Anuradhapura's five main viharas and one of seventeen such holy buildings was called "Abhayagiri" and situated to the north of the city, surrounded by massive walls and featuring exquisite bathing pools, carved balustrades, and moonstones. </p>
+      </div>
+
+      <div class="desc-box">
+        <h3 id="Jetavanaramaya">Jetavanaramaya</h3>
+        <br></br>
+        <img class="image" src="images/Jetavanaramaya1.jpg">
+        <p><span class="tab"></span>The Jetavanaramaya is a stupa that may be seen amid the Jetavana Monastery ruins in Sri Lanka's revered Anuradhapura, a city that is included as a world heritage site. Following the fall of Mahavihara, King Mahasena (273–301 AD) began building the stupa, and his son Meghavanna continued the project.[10] The relic that is kept here is thought to be a piece of a belt or sash that the Buddha fastened. Archaeologists think it may have been over 100 meters tall when it was first built, although it is only around 70 meters tall today. The Abhayagiri was also approximately this height. It was the third-tallest structure when it was erected, behind the Egyptian pyramids and the Great Wall of China.</p>
+      </div>
+
+      <div class="desc-box">
+        <h3 id="Lankaramaya">Lankarama</h3>
+        <br></br>
+        <img class="image" src="images/lankarama3.jpg">
+        <p><span class="tab"></span>King Valagamba built the stupa known as Lankarama on the historic site of Galhebakada in the former Sri Lankan kingdom of Anuradhapura. The ancient shape of the stupa, which was later restored, is unknown. The remains reveal rows of stone pillars, and it is obvious that a building was erected to surround and conceal the stupa (vatadage). The stupa's circular courtyard appears to be 10 feet (3.0 m) above the surface of the earth. The stupa is 45 feet (14 meters) in diameter. The courtyard has a 1,332 foot (406 m) circumference and is round in form.</p>
+      </div>
+
+      <div class="desc-box">
+        <h3 id="Lovamahapaya">Lovamahapaya</h3>
+        <br></br>
+        <img class="image" src="images/Lovamahapaya1.jpg">
+        <p><span class="tab"></span>In the historic city of Anuradhapura, Sri Lanka, there is a structure called Lovamahapaya that is situated between Ruvanveliseya and Sri Mahabodiya. Due to the bronze tiled roof, it is also known as the Brazen Palace or Lohaprasadaya. More than 2000 years ago, King Dutugemunu constructed it for the first time, but over the centuries, it was extensively restored, each time with a somewhat less opulent design. All that is left of this enormous palace, which according to archeological data had nine stories and could hold about 1000 monks and attendants, are the fragments of 1600 columns.</p>
+      </div>
+
+      <div class="desc-box">
+        <h3 id="Mirisavetiya">Mirisaveti Stupa</h3>          
+        <br></br>
+        <img class="image" src="images/Mirisawetiya2.jpg">
+        <p><span class="tab"></span>In Sri Lanka's historic city of Anuradhapura, the Mirisaveti Stupa can be found. After conquering King Elara, King Dutugamunu constructed the Mirisaveti Stupa. He had left the sceptre behind after putting the Buddha relics within it before heading to Tisawewa for a bath. After taking a bath, he went back to where the sceptre had been set, and it is believed that it was immovable. The sceptre's former location was where the stupa now stands. He reportedly also realized that he ate a spicy meal without first presenting it to the sangha. He constructed the Mirisavetiya Dagaba as retribution for himself.</p>
+      </div>
+
+      <div class="desc-box">
+        <h3 id="Ruwanwelisaya">Ruwanwelisaya</h3>
+        <br></br>
+        <img class="image" src="images/Ruwanwelisaya3.jpg">
+        <p><span class="tab"></span>The Ruwanwelisaya, a stupa in Sri Lanka, is revered by many Buddhists throughout the world and is regarded as a masterpiece of architecture.  After a war in which the Chola King Elara was vanquished, King Dutugemunu, who thereafter became the ruler of all of Sri Lanka, constructed it. There are also more names for it, including Mahathupa, Swarnamali Chaitya, Suvarnamali Mahaceti, and Rathnamali Dagaba (in Pali).</p>
+      </div>
+          
+      <div class="desc-box">
+        <h3 id="Bodhi">Jaya Sri Maha Bodhi</h3>
+        <br></br>
+        <img class="image" src="images/bodhi2.jpg">
+        <p><span class="tab"></span>Jaya Sri Maha Bodhi is a Sacred Fig tree in Anuradhapura, Sri Lanka.The historical Bodhi tree, beneath which Buddha attained enlightenment, is claimed to have produced this seedling. It is believed to be the southern branch of the Sri Maha Bodhi Bodhgaya India, the oldest live human-planted tree in the world with a date of planting, and that it was planted in 288 BC. The holy tree was transported by Ven. Sangamitta, the sister of Ven. Arahath Mahinda, who brought the teachings of Buddha to Sri Lanka.</p> 
+      </div>
+      
+      
+      
+      
+      
+      
+      
+    </div>
+
+    <div class="section4" id="footer">
+      <div class="media">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" style="font-size:40px";></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" style="font-size:40px";></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin" style="font-size:40px";></i></a>
+      </div>
+
+      <p class="p2"><span><b>Contact No: </b></span>011-234 56 78</p>
+      <p class="p2"><span><b>Email: </b></span>abc123@gmail.com</p>
+      <p class="p3" id="demo"></p>
+    </div>
+
+    <script src="new-script.js"></script>
+    
+  </body>
+</html>
+
+ 
+
+

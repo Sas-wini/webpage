@@ -1,0 +1,31 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+ .section1{
+    background: radial-gradient(#15ddd0 0%,#21b5c6 51%, #29bcf1 75%);
+    height: 80vh;
+    width: 100%;
+}
+.section2{
+    margin: 0;
+    padding: 10px;
+    background-color: #29bcf1;
+    width: 100%;
+}
+.section3{
+    background-color: #29bcf1;
+    left: 0%;
+    bottom: 0%;
+    height: max-content;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+}
